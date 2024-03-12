@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yz.mall.user.mapper.UmsIntegrationConsumeSettingMapper">
+
+    <resultMap type="com.yz.mall.user.domain.UmsIntegrationConsumeSetting"
+               id="UmsIntegrationConsumeSettingMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="deductionPerAmount" column="deduction_per_amount" jdbcType="INTEGER"/>
+        <result property="maxPercentPerOrder" column="max_percent_per_order" jdbcType="INTEGER"/>
+        <result property="useUnit" column="use_unit" jdbcType="INTEGER"/>
+        <result property="couponStatus" column="coupon_status" jdbcType="INTEGER"/>
+    </resultMap>
+
+</mapper>
+

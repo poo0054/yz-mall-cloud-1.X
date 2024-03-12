@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yz.mall.user.mapper.UmsAdminRoleRelationMapper">
+
+    <resultMap type="com.yz.mall.user.domain.UmsAdminRoleRelation"
+               id="UmsAdminRoleRelationMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="adminId" column="admin_id" jdbcType="INTEGER"/>
+        <result property="roleId" column="role_id" jdbcType="INTEGER"/>
+    </resultMap>
+    <select id="getRoleList" resultMap="com.yz.mall.user.mapper.UmsRoleMapper.UmsRoleMap">
+        select r.*
+        from ums_admin_role_relation ar
+                 left join ums_role r on ar.role_id = r.id
+        where ar.admin_id = #{adminId}
+    </select>
+
+</mapper>
+

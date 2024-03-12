@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yz.mall.user.mapper.UmsMemberStatisticsInfoMapper">
+
+    <resultMap type="com.yz.mall.user.domain.UmsMemberStatisticsInfo"
+               id="UmsMemberStatisticsInfoMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="memberId" column="member_id" jdbcType="INTEGER"/>
+        <result property="consumeAmount" column="consume_amount" jdbcType="NUMERIC"/>
+        <result property="orderCount" column="order_count" jdbcType="INTEGER"/>
+        <result property="couponCount" column="coupon_count" jdbcType="INTEGER"/>
+        <result property="commentCount" column="comment_count" jdbcType="INTEGER"/>
+        <result property="returnOrderCount" column="return_order_count" jdbcType="INTEGER"/>
+        <result property="loginCount" column="login_count" jdbcType="INTEGER"/>
+        <result property="attendCount" column="attend_count" jdbcType="INTEGER"/>
+        <result property="fansCount" column="fans_count" jdbcType="INTEGER"/>
+        <result property="collectProductCount" column="collect_product_count" jdbcType="INTEGER"/>
+        <result property="collectSubjectCount" column="collect_subject_count" jdbcType="INTEGER"/>
+        <result property="collectTopicCount" column="collect_topic_count" jdbcType="INTEGER"/>
+        <result property="collectCommentCount" column="collect_comment_count" jdbcType="INTEGER"/>
+        <result property="inviteFriendCount" column="invite_friend_count" jdbcType="INTEGER"/>
+        <result property="recentOrderTime" column="recent_order_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+</mapper>
+

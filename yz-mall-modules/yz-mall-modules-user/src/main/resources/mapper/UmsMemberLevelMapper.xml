@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yz.mall.user.mapper.UmsMemberLevelMapper">
+
+    <resultMap type="com.yz.mall.user.domain.UmsMemberLevel" id="UmsMemberLevelMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="growthPoint" column="growth_point" jdbcType="INTEGER"/>
+        <result property="defaultStatus" column="default_status" jdbcType="INTEGER"/>
+        <result property="freeFreightPoint" column="free_freight_point" jdbcType="NUMERIC"/>
+        <result property="commentGrowthPoint" column="comment_growth_point" jdbcType="INTEGER"/>
+        <result property="priviledgeFreeFreight" column="priviledge_free_freight"
+                jdbcType="INTEGER"/>
+        <result property="priviledgeSignIn" column="priviledge_sign_in" jdbcType="INTEGER"/>
+        <result property="priviledgeComment" column="priviledge_comment" jdbcType="INTEGER"/>
+        <result property="priviledgePromotion" column="priviledge_promotion" jdbcType="INTEGER"/>
+        <result property="priviledgeMemberPrice" column="priviledge_member_price"
+                jdbcType="INTEGER"/>
+        <result property="priviledgeBirthday" column="priviledge_birthday" jdbcType="INTEGER"/>
+        <result property="note" column="note" jdbcType="VARCHAR"/>
+    </resultMap>
+
+</mapper>
+
